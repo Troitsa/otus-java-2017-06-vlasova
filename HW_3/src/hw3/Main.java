@@ -1,6 +1,7 @@
 package hw3;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by Роза on 19.06.2017.
@@ -17,20 +18,22 @@ public class Main {
 
         System.out.println("=========addAll=========");
         System.out.println("before: " + arrList);
-        arrList.addAll(list);
+        Collections.addAll(arrList,"Second","First","Third");
         System.out.println("after: " + arrList);
         System.out.println();
 
 
         System.out.println("=========copy=========");
         System.out.println("before: " + arrListCopy);
-        MyArrayList.copy(arrListCopy,arrList);
+        Collections.addAll(arrListCopy,"Fifth","Sixth","Seventh");
+        System.out.println("before: " + arrListCopy);
+        Collections.copy(arrListCopy,arrList);
         System.out.println("after: " + arrListCopy);
         System.out.println();
 
         System.out.println("=========sort=========");
         System.out.println("before: " + arrList);
-        arrList.sort(String::compareTo);
+        Collections.sort(arrList);
         System.out.println("after: " + arrList);
     }
 }
