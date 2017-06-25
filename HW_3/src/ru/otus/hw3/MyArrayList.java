@@ -1,4 +1,4 @@
-package hw3;
+package ru.otus.hw3;
 
 import java.util.*;
 
